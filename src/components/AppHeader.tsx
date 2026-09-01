@@ -67,13 +67,13 @@ export function AppHeader() {
     <header className="sticky top-0 z-40 border-b border-border bg-card/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-4 sm:px-6">
         <Link to="/" className="flex items-center">
-  <img
-    src={logoUrl}
-    alt="HayatBridge logo: medical cross"
-    width={44}
-    height={44}
-    className="h-11 w-11 object-contain"
-  />
+  <div className="h-12 w-28 overflow-hidden">
+    <img
+      src={logoUrl}
+      alt="HayatBridge logo"
+      className="h-full w-full scale-[1.8] object-contain"
+    />
+  </div>
 </Link>
 
         {user && (
