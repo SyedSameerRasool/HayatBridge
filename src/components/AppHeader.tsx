@@ -66,19 +66,15 @@ export function AppHeader() {
     <>
     <header className="sticky top-0 z-40 border-b border-border bg-card/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-4 sm:px-6">
-        <Link to="/" className="flex items-center gap-2">
-          <img
-            src={logoUrl}
-            alt="HayatBridge logo: medical cross"
-            width={36}
-            height={36}
-            className="h-9 w-9 object-contain"
-          />
-          <div className="leading-tight">
-            <div className="text-sm font-semibold tracking-tight text-foreground">HayatBridge</div>
-            <div className="text-[11px] font-medium text-muted-foreground">Patient portal</div>
-          </div>
-        </Link>
+        <Link to="/" className="flex items-center">
+  <img
+    src={logoUrl}
+    alt="HayatBridge logo: medical cross"
+    width={44}
+    height={44}
+    className="h-11 w-11 object-contain"
+  />
+</Link>
 
         {user && (
           <nav className="hidden items-center gap-1 lg:flex">
