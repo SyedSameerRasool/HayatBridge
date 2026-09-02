@@ -164,12 +164,10 @@ function AuthPage() {
       <main className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:py-20">
         <div className="hidden flex-col justify-center lg:flex">
           <img
-            src={logoUrl}
-            alt="HayatBridge logo: medical cross with ECG heartbeat line"
-            width={56}
-            height={56}
-            className="h-14 w-14 object-contain"
-          />
+        src={logoUrl}
+        alt="HayatBridge logo"
+        className="h-20 w-auto max-w-[160px] object-contain py-1"
+      />
           <h1 className="mt-6 text-3xl font-semibold tracking-tight text-foreground">
             Secure access to your medical record
           </h1>
